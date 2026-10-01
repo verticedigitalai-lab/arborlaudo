@@ -259,6 +259,7 @@ export default function FormularioSolicitacao() {
       <header className="top">
       <div className="brandrow">
       <Image
+      className="brandlogo"
       src="/logo-arborlaudo.png"
       alt="Arbor Laudo"
       width={250}
