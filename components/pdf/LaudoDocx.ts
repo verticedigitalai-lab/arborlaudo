@@ -109,7 +109,8 @@ export async function gerarLaudoDocx({
           ...paragrafosTexto,
           ...imagensDocx,
           new Paragraph({ text: '', spacing: { before: 400 } }),
-          new Paragraph({ text: emissor, bold: true }),
+          new Paragraph({children: [new TextRun({ text: emissor, bold: true })],}),
+
           new Paragraph({ text: 'Biólogo CRBio 50740/01-S' }),
         ],
       },
